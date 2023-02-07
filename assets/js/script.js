@@ -19,7 +19,7 @@ function currentCondition(city) {
         const lat = response.coord.lat;
         const lon = response.coord.lon;
         
-        const uviQuery = 
+        
     })
 }
 
@@ -41,7 +41,7 @@ searchButton.addEventListener('click', function(e) {
             <li class="list-group-item">${city}</li>
         `);
 
-        document.querySelector('#cityHistory').appendChild(cityHistory);
+        $('#cityHistory').append(cityHistory);
     };
 
     localStorage.setItem("city", JSON.stringify(history));
